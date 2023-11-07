@@ -1,0 +1,64 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Barrio Gran Limonar II y III</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="module" src="./index.ts"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Mi Barrio - Gran Limonar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/map.html">Mapa del Barrio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/veeduria.html">Veeduría Ciudadana</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Acerca de</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-4">
+      <div id="map"></div>
+    </div>
+
+        <!-- Footer con iconos de redes sociales -->
+        <footer class="bg-dark text-white text-center py-3">
+          <div class="container">
+            <div class="mb-3">
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2023 Barrio Gran Limonar II y III</p>
+          </div>
+        </footer>
+
+    <!-- prettier-ignore -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmZpA70ZSOisUj6I9cxh0Yd2n38ZBIew4&callback=initMap&v=weekly&language=es"
+      defer
+    ></script>
+  </body>
+</html>
+
