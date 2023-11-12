@@ -1,0 +1,329 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Barrio Gran Limonar II y III</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="module" src="./comuna.ts"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="barra-lateral col-12 col-sm-auto">
+            <div class="logo">
+                <h2>Dashboard Comuna 17</h2>
+            </div>
+            <ul class="menu list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn align-items-center rounded" data-bs-toggle="" data-bs-target="#home-collapse">
+                  <a style="margin-left: 0px !important;" href="index.html"><i class="icon-home"></i><span>Home</span></a>
+                </button>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#barrios-collapse">
+                    <i class="icon-building"></i><span>Barrios</span>
+                </button>
+                <div class="collapse" id="barrios-collapse">
+                  <ul class="btn-toggle-nav list-unstyled">
+                    <li><a href="dashboard-cataya.html" class="link rounded">- Gran Limonar - Cataya</a></li>
+                    <li><a href="dashboard-gran-limonar.html" class="link rounded">- Gran Limonar</a></li>
+                    <li><a href="dashboard-la-hacienda.html" class="link rounded">- La Hacienda</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#elecciones-collapse">
+                    <i class="icon-angellist"></i><span>Elecciones Regionales 2023</span>
+                </button>
+                <div class="collapse" id="elecciones-collapse">
+                  <ul class="btn-toggle-nav list-unstyled">
+                    <li><a href="concejo.html" class="link rounded">- Concejo</a></li>
+                    <li><a href="ediles.html" class="link rounded">- Ediles</a></li>
+                    <li><a href="alcaldia.html" class="link rounded">- Alcaldía</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="border-top my-3"></li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse">
+                    <i class="icon-sun"></i><span>Configuración</span>
+                </button>
+                <div class="collapse" id="account-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded">Sugerencias</a></li>
+                    <li><a href="#" class="link-dark rounded">Acerca de</a></li>
+                    <li><a href="#" class="link-dark rounded">Sube tu queja</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            
+        </div>
+
+            <main class="main col">
+                <div class="row">
+                    <div class="columna col-lg-12">
+                        <h1 class="titulo-h1">Elecciones para Concejo</h1>
+                    </div>
+
+                    <div class="columna col-lg-7">
+                        <div class="widget mapa">
+                            <h3 class="titulo">Votos por partidos y candidatos</h3>
+                            <ul class="list-group">
+                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#partido-u">
+                                <li class="list-group-item">Partido de la U <span class="badge">105.801 <i>(14%)</i></span><span class="badge">4 curules</span>
+                                </li></button> 
+                                  <div class="collapse" id="partido-u">
+                                    <ul class="btn-toggle-nav list-unstyled">
+                                    <li class="list-group-item">Audry Maria Toro Echavarría <span class="badge">19.363 <i>(2,6%)</i></span>
+                                    <li class="list-group-item">Tania Fernandez Sánchez <span class="badge">18.226 <i>(2,4%)</i></span>
+                                    <li class="list-group-item">Henry Peláez Cifuentes <span class="badge">16.853 <i>(2,2%)</i></span>
+                                    <li class="list-group-item">Carlos Andrés Arias Rueda <span class="badge">14.483 <i>(1,9%)</i></span>
+                                    </div>
+                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#partido-liberal">
+                                 <li class="list-group-item">Partido Liberal <span class="badge">85.764 <i>(11,4%)</i></span><span class="badge">3 curules</span>
+                                </li></button>
+                                <div class="collapse" id="partido-liberal">
+                                  <ul class="btn-toggle-nav list-unstyled">
+                                  <li class="list-group-item">Carlos Hernando Pinilla Malo <span class="badge">18.721 <i>(2,5%)</i></span>
+                                  <li class="list-group-item">Fabio Alonso Arroyave Botero <span class="badge">16.392 <i>(2,2%)</i></span>
+                                  <li class="list-group-item">James Junior Agudelo Arevalo <span class="badge">13.566 <i>(1,8%)</i></span>
+                                  </div>
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#pacto">
+                              <li class="list-group-item">Pacto Histórico <span class="badge">83.041 <i>(11%)</i></span><span class="badge">3 curules</span>
+                              </li></button>
+                              <div class="collapse" id="pacto">
+                                <ul class="btn-toggle-nav list-unstyled">
+                                <li class="list-group-item">Ana Leidy Erazo Ruiz </span>
+                                <li class="list-group-item">Luis Fernando Salazar Guapacha </span>
+                                <li class="list-group-item">Maria del Carmen Londoño Sanna </span>
+                                </div>
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#partido-verde">
+                                <li class="list-group-item">Partido Verde <span class="badge">82.584 <i>(11%)</i></span><span class="badge">3 curules</span>
+                                </li></button>
+                                <div class="collapse" id="partido-verde">
+                                  <ul class="btn-toggle-nav list-unstyled">
+                                  <li class="list-group-item">Flower Enrique Rojas Torres <span class="badge">16.772 <i>(2,2%)</i></span>
+                                  <li class="list-group-item">Rodrigo Salazar Sarmiento <span class="badge">16.344 <i>(2,2%)</i></span> 
+                                  <li class="list-group-item">Carlos Ariel Patiño Moya <span class="badge">10.807 <i>(1,4%)</i></span>
+                                  </div>
+                                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#centro-democratico">
+                                  <li class="list-group-item">Centro Democrático <span class="badge">64.440 <i>(8,6%)</i></span><span class="badge">2 curules</span>
+                                  </li>  </button>
+                                  <div class="collapse" id="centro-democratico">
+                                    <ul class="btn-toggle-nav list-unstyled">
+                                    <li class="list-group-item">Rafael Andrés Escobar González <span class="badge">16.772 <i>(2,2%)</i></span>
+                                    <li class="list-group-item">Juan Felipe Murgueitio Bustamante <span class="badge">16.344 <i>(2,2%)</i></span> 
+                                    </div>
+                                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#cambio-radical">
+                                  <li class="list-group-item">Cambio Radical <span class="badge">40.787 <i>(5,4%)</i></span><span class="badge">2 curules</span>
+                                  </li></button>
+                                  <div class="collapse" id="cambio-radical">
+                                    <ul class="btn-toggle-nav list-unstyled">
+                                    <li class="list-group-item">Edison Lucumi Lucumi <span class="badge">17.043 <i>(2,3%)</i></span>
+                                    <li class="list-group-item">Alexandra Hernandez Cedeño <span class="badge">9.272 <i>(1,2%)</i></span> 
+                                    </div>
+                                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#partido-conservador">
+                              <li class="list-group-item">Partido Conservador <span class="badge">40.787 <i>(6,4%)</i></span><span class="badge">1 curul</span>
+                              </li></button>
+                              <div class="collapse" id="partido-conservador">
+                                <ul class="btn-toggle-nav list-unstyled">
+                                <li class="list-group-item">Marlon Andrés Cubillos Borrero <span class="badge">17.043 <i>(2,3%)</i></span>
+                                </div>
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#cali-une">
+                              <li class="list-group-item">Cali Nos Une <span class="badge">31.467 <i>(4,2%)</i></span><span class="badge">1 curul</span>
+                              </li></button>
+                              <div class="collapse" id="cali-une">
+                                <ul class="btn-toggle-nav list-unstyled">
+                                <li class="list-group-item">Edison Alberto Giraldo Hoyos <span class="badge">12.578 <i>(1,7%)</i></span>
+                                </div>
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#colombia-renaciente">
+                              <li class="list-group-item">Colombia Renaciente <span class="badge"><i>30.603 (4,1%)</i></span><span class="badge">1 curul</span>
+                              </li></button>
+                              <div class="collapse" id="colombia-renaciente">
+                                <ul class="btn-toggle-nav list-unstyled">
+                                <li class="list-group-item">Daniela Plaza Saldarriaga <span class="badge">7.359 <i>(1%)</i></span>
+                                </div>
+                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#firmes-cali">
+                              <li class="list-group-item">Firmes con Cali <span class="badge">Oposición</span><span class="badge">1 curul</span>
+                              </li></button>
+                              <div class="collapse" id="firmes-cali">
+                                <ul class="btn-toggle-nav list-unstyled">
+                                <li class="list-group-item">Roberto Ortiz </span>
+                                </div>
+                            </ul>
+                        </div>
+                        
+                        <div class="widget convenciones">
+                            <h3 class="titulo">Convenciones</h3>
+                            <div class="contenedor d-flex flex-wrap">
+                                <div class="caja">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                    <circle cx="5" cy="5" r="5"/>
+                                </svg>
+                                <span>Calles en mal estado</span>
+                                </div>
+                            
+                                <div class="caja">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="yellow" class="bi bi-geo" viewBox="0 0 16 16">
+                                    <path d="M9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z"/>
+                                </svg>
+                                <span>Obras públicas</span>
+                                </div>
+                                <div class="caja">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="green" class="bi bi-geo" viewBox="0 0 16 16">
+                                    <path d="M 8.4 0.2 A 0.5 0.5 90 0 0 7.6 0.2 L 4.6 4.7 A 0.5 0.5 90 0 0 5 5.5 H 5.1 L 3.1 8.7 A 0.5 0.5 90 0 0 3.5 9.5 H 3.7 L 2.1 12.8 A 0.5 0.5 90 0 0 2.5 13.5 H 7 V 16 H 9 V 13.5 H 13.5 A 0.5 0.5 90 0 0 13.9 12.8 L 12.3 9.5 H 12.5 A 0.5 0.5 90 0 0 12.9 8.7 L 10.9 5.5 H 11 A 0.5 0.5 90 0 0 11.4 4.7 L 8.4 0.2 Z Z"/>
+                                </svg>
+                                <span>Parques</span>
+                                </div>
+                                <div class="caja">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="yellow" class="bi bi-geo" viewBox="0 0 16 16">
+                                    <path d="M8 1.5a.5.5 0 0 1 .5.5V7h5.5a.5.5 0 0 1 0 1H8v5.5a.5.5 0 0 1-1 0V8H1.5a.5.5 0 0 1 0-1H7V1.5a.5.5 0 0 1 .5-.5z"/>
+                                </svg>
+                                <span>Iglesias</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columna col-lg-5">
+                        <div class="widget estadisticas">
+                            <h3 class="titulo">Datos Generales</h3>
+                            <div class="contenedor d-flex flex-wrap">
+                                <div class="caja">
+                                    <h3>815.856</h3>
+                                    <p>Votantes</p>
+                                    <i>44,9%</i>
+                                </div>
+                                <div class="caja">
+                                    <h3>118.093</h3>
+                                    <p>En blanco</p>
+                                    <i>14,5%</i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget comentarios list-group">
+                            <h3 class="titulo">Preguntas Frecuentes</h3>
+                            <ul class="list-group">
+                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#faq-1">
+                                <li class="list-group-item">¿Qué hace el Concejo de Cali?</i></span>
+                                </li>
+                              </button> 
+                                  <div class="collapse" id="faq-1">
+                                    <ul class="btn-toggle-nav list-unstyled">
+                                    <li class="list-group-item">
+                                        Los concejales representan a los ciudadanos
+                                        y tienen dos funciones principales:</br>
+                                        1. Debatir Proyectos de Acuerdo.</br>
+                                        2. Ejercer control político a las actuaciones 
+                                        de la Alcaldía.Su número depende del número de habitantes.</br></br> 
+                                        En Cali se eligen 21 concejales porque de acuerdo al 
+                                        Censo de Población, la Ciudad tiene más de 1.000.000 de 
+                                        habitantes. </br></br>
+                                        Los concejales son elegidos cada tres años, 
+                                        conjuntamente con el Alcalde. Los asuntos referidos a su gestión se establecen en Acuerdos, los cuales deben
+                                        ajustarse a las funciones que constitucional y legalmente 
+                                        le corresponden. </br></br>
+                                        El Concejo Municipal de 
+                                        Cali, por mandato 
+                                        constitucional, cumple 
+                                        diferentes funciones, entre ellas 
+                                        estudiar, aprobar y rechazar Proyectos de 
+                                        Acuerdo, así como presentar iniciativas 
+                                        normativas siempre y cuando, según lo 
+                                        establecido en la ley 136 de 1994, no tengan 
+                                        impacto fiscal en las finanzas municipales
+                                    </li>
+                                  </div>
+                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#faq-2">
+                                <li class="list-group-item">¿Cómo funciona el Concejo?</i></span>
+                                </li>
+                              </button> 
+                                  <div class="collapse" id="faq-2">
+                                    <ul class="btn-toggle-nav list-unstyled">
+                                    <li class="list-group-item">
+                                      El Concejo de Cali se reúne ordinariamente cuatro veces al año, específicamente el primero de agosto, noviembre, febrero y mayo. Estas sesiones tienen una duración inicial de treinta días, con la posibilidad de ser prorrogadas por diez días más a discreción del Concejo.
+                                    </br></br>
+Además de las reuniones ordinarias, el Concejo puede convocarse extraordinariamente por decisión del Alcalde. En estas ocasiones, se abordan exclusivamente los asuntos que la autoridad que los convocó somete a su consideración.
+</br></br>
+                                      En Cali, el Concejo se divide en tres comisiones: Comisión de Plan y Tierras, Comisión 
+                                      de Institutos y Comisión de Presupuesto. </br></br>
+                                      De las sesiones se levantan actas que contienen la 
+                                      relación de los temas tratados, las personas que 
+                                      intervienen, los mensajes, proposiciones y decisiones 
+                                      adoptadas.  
+                                    </li>
+                                  </div>
+                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#faq-3">
+                                <li class="list-group-item">¿Por qué es importante hacer seguimiento al Concejo?</i></span>
+                                </li>
+                              </button> 
+                                  <div class="collapse" id="faq-3">
+                                    <ul class="btn-toggle-nav list-unstyled">
+                                    <li class="list-group-item">
+                                      Hacer seguimiento al Concejo de Cali hace 
+parte del ejercicio de control social que la 
+Constitución Nacional de Colombia facultó 
+a la sociedad civil. Aunque, se puede entender como un ejercicio democrático de cara 
+al presente, también exige pensar prospectivamente la ciudad y la región que queremos construir en el mediano y largo plazo.    </li>
+                                  </div>
+                            </ul>
+                        </div>
+                        <div class="widget nueva_entrada">
+                            <h3 class="titulo">Deja tu denuncia</h3>
+                            <form action="">
+                                <input type="text" placeholder="Nombre completo">
+                                <input type="text" placeholder="Correo electrónico">
+                                <input type="text" placeholder="Título de la denuncia">
+                                <textarea placeholder="Lorem ipsum"></textarea>
+                                <div class="d-flex justify-content-end">
+                                    <button><i class="icon icon-ok"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+        
+        </div>
+
+
+    </div>
+
+
+        <!-- Footer con iconos de redes sociales -->
+        <footer class="bg-dark text-white text-center py-3">
+          <div class="container">
+            <div class="mb-3">
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2023 Barrio Gran Limonar II y III</p>
+          </div>
+        </footer>
+
+    <!-- prettier-ignore -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmZpA70ZSOisUj6I9cxh0Yd2n38ZBIew4&callback=initMap&v=weekly&language=es"
+      defer
+    ></script>
+    <script src="sidebars.js"></script>
+  </body>
+
+</html>
+
