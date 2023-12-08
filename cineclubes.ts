@@ -86,7 +86,19 @@ function markerChurch(labelText) {
 
 // Coordenadas de los marcadores
 const markerCoordinates = [
-  { lat: 3.4558323, lng:  -76.5256986 , label: 'Hueco' },
+  { lat: 3.4558323, lng:  -76.5256986 , label: 'Cine Quanon' },
+  { lat: 3.4557832, lng:  -76.5302506 , label: 'Casa Mangle' },
+  { lat: 3.392523, lng:  -76.5460429 , label: 'Oromo' },
+  { lat: 3.4406607, lng:  -76.549231 , label: 'EnBiciArte' },
+  { lat: 3.4095661, lng:  -76.5193826 , label: 'Cine Consciencia' },
+  { lat: 3.4500471, lng:  -76.7071516 , label: 'Cinerrante' },
+  { lat: 3.4529044, lng:  -76.5388781 , label: 'Cinestribos' },
+  { lat: 3.4498315, lng:  -76.5387631 , label: 'Sala Audiovisual' },
+  { lat: 3.4478189, lng:  -76.5412893 , label: 'Cafe Macondo' },
+  { lat: 3.4447028, lng:  -76.5490525 , label: 'Los Cristales' },
+  { lat: 3.4351843, lng:  -76.5447866 , label: 'Dulcencanto' },
+  { lat: 3.4324338, lng:  -76.5480368 , label: 'Cinemandra' },
+  { lat: 3.440148, lng:  -76.5356076 , label: 'La Negrona' },
 ];
 
 // Agregar marcadores utilizando un bucle
