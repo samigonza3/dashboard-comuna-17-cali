@@ -3,6 +3,14 @@
 .icon-home:before { content: '\e801'; } /* '' */
 .icon-info-circled:before { content: '\e802'; } /* '' */
 .icon-play:before { content: '\e803'; } /* '' */
+.icon-book-open:before { content: '\e804'; } /* '' */
+.icon-plus:before { content: '\e805'; } /* '' */
+.icon-commerical-building:before { content: '\e811'; } /* '' */
+.icon-police:before { content: '\e82b'; } /* '' */
+.icon-comment-empty:before { content: '\f0e5'; } /* '' */
+.icon-user-md:before { content: '\f0f0'; } /* '' */
 .icon-building:before { content: '\f0f7'; } /* '' */
 .icon-sun:before { content: '\f185'; } /* '' */
+.icon-tree:before { content: '\f1bb'; } /* '' */
 .icon-angellist:before { content: '\f209'; } /* '' */
+.icon-shopping-bag:before { content: '\f290'; } /* '' */

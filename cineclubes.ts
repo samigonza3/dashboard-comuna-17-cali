@@ -22,39 +22,9 @@ function initMap() {
 // Define la función para crear marcadores comunes
 function markerCommon(labelText) {
   return {
-    path: 'M 8.4 0.2 A 0.5 0.5 90 0 0 7.6 0.2 L 4.6 4.7 A 0.5 0.5 90 0 0 5 5.5 H 5.1 L 3.1 8.7 A 0.5 0.5 90 0 0 3.5 9.5 H 3.7 L 2.1 12.8 A 0.5 0.5 90 0 0 2.5 13.5 H 7 V 16 H 9 V 13.5 H 13.5 A 0.5 0.5 90 0 0 13.9 12.8 L 12.3 9.5 H 12.5 A 0.5 0.5 90 0 0 12.9 8.7 L 10.9 5.5 H 11 A 0.5 0.5 90 0 0 11.4 4.7 L 8.4 0.2 Z Z',
-    label: labelText,
-    fillColor: 'green',
-    fillOpacity: 3,
-    anchor: new google.maps.Point(10, 0),
-    strokeWeight: 1,
-    scale: 2,
-    color: 'white',
-    fontSize: '16px',
-  };
-}
-
-// Define la función para crear marcadores comunes
-function markerConstruction(labelText) {
-  return {
-    path: 'm9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z',
-    label: labelText,
-    fillColor: 'yellow',
-    fillOpacity: 3,
-    anchor: new google.maps.Point(10, 0),
-    strokeWeight: 1,
-    scale: 2,
-    color: 'white',
-    fontSize: '16px',
-  };
-}
-
-// Define la función para crear marcadores comunes
-function markerHueco(labelText) {
-  return {
     path: google.maps.SymbolPath.CIRCLE,
     label: labelText,
-    fillColor: 'red',    
+    fillColor: 'yellow',    
     animation: google.maps.Animation.BOUNCE,
     fillOpacity: 5,
     anchor: new google.maps.Point(0, 0),
@@ -62,27 +32,9 @@ function markerHueco(labelText) {
     scale: 7,
     color: 'white',
     fontSize: '16px',
-  }; 
-
-}
-
-// Define la función para crear el marcador de cruz
-function markerChurch(labelText) {
-  return {
-    path: 'M 12 5 L 12 5 L 17 5 L 17 12 L 22 12 L 22 17 L 17 17 L 17 24 L 12 24 L 12 17 L 7 17 L 7 12 L 12 12 L 12 5 Z',
-    fillColor: 'yellow',
-    fillOpacity: 4,
-    anchor: new google.maps.Point(10, 0),
-    strokeWeight: 2,
-    scale: 1.5,
-    labelOrigin: new google.maps.Point(12, 10),
-    label: {
-      text: labelText,
-      color: 'white',
-      fontSize: '16px',
-    },
   };
 }
+
 
 // Coordenadas de los marcadores
 const markerCoordinates = [
