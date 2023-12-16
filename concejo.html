@@ -188,6 +188,12 @@
                             </div>
                         </div>
                         <div class="widget comentarios list-group">
+                          <h3 class="titulo">Últimos Acuerdos</h3>
+                          <ul class="list-group" id="ultimosAcuerdos">                              
+
+                          </ul>
+                      </div>  
+                        <div class="widget comentarios list-group">
                             <h3 class="titulo">Preguntas Frecuentes</h3>
                             <ul class="list-group">
                               <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#faq-1">
@@ -229,8 +235,8 @@
                                     <li class="list-group-item">
                                       El Concejo de Cali se reúne ordinariamente cuatro veces al año, específicamente el primero de agosto, noviembre, febrero y mayo. Estas sesiones tienen una duración inicial de treinta días, con la posibilidad de ser prorrogadas por diez días más a discreción del Concejo.
                                     </br></br>
-Además de las reuniones ordinarias, el Concejo puede convocarse extraordinariamente por decisión del Alcalde. En estas ocasiones, se abordan exclusivamente los asuntos que la autoridad que los convocó somete a su consideración.
-</br></br>
+                                      Además de las reuniones ordinarias, el Concejo puede convocarse extraordinariamente por decisión del Alcalde. En estas ocasiones, se abordan exclusivamente los asuntos que la autoridad que los convocó somete a su consideración.
+                                      </br></br>
                                       En Cali, el Concejo se divide en tres comisiones: Comisión de Plan y Tierras, Comisión 
                                       de Institutos y Comisión de Presupuesto. </br></br>
                                       De las sesiones se levantan actas que contienen la 
@@ -247,21 +253,14 @@ Además de las reuniones ordinarias, el Concejo puede convocarse extraordinariam
                                     <ul class="btn-toggle-nav list-unstyled">
                                     <li class="list-group-item">
                                       Hacer seguimiento al Concejo de Cali hace 
-parte del ejercicio de control social que la 
-Constitución Nacional de Colombia facultó 
-a la sociedad civil. Aunque, se puede entender como un ejercicio democrático de cara 
-al presente, también exige pensar prospectivamente la ciudad y la región que queremos construir en el mediano y largo plazo.    </li>
+                                      parte del ejercicio de control social que la 
+                                      Constitución Nacional de Colombia facultó 
+                                      a la sociedad civil. Aunque, se puede entender como un ejercicio democrático de cara 
+                                      al presente, también exige pensar prospectivamente la ciudad y la región que queremos construir en el mediano y largo plazo.    </li>
                                   </div>
                             </ul>
                         </div>
-                        <div class="widget comentarios list-group">
-                            <h3 class="titulo">Últimos Acuerdos</h3>
-                            <ul class="list-group">
-                              
-                                <li class="list-group-item">¿Por qué es importante hacer seguimiento al Concejo?</i></span>
-                                </li>
-                            </ul>
-                        </div>
+
                         <div class="widget nueva_entrada">
                             <h3 class="titulo">Deja tu denuncia</h3>
                             <form action="">
@@ -306,6 +305,30 @@ al presente, también exige pensar prospectivamente la ciudad y la región que q
       defer
     ></script>
     <script src="sidebars.js"></script>
+    <script src="enlaces.js"></script>
+    <script>
+      // Obtener la referencia al elemento ul
+      const ultimosAcuerdosUl = document.getElementById('ultimosAcuerdos');
+  
+      // Iterar sobre los primeros 5 enlaces y agregarlos a la lista
+      for (let i = 0; i < 5 && i < enlaces.length; i++) {
+          // Crear un elemento li
+          const nuevoAcuerdoLi = document.createElement('li');
+          nuevoAcuerdoLi.classList.add('list-group-item');
+  
+          // Crear un enlace a partir del URL
+          const nuevoEnlace = document.createElement('a');
+          nuevoEnlace.href = enlaces[i].url;  // Utilizar la URL del objeto enlaces
+          nuevoEnlace.textContent = enlaces[i].titulo;  // Utilizar el título del objeto enlaces
+          nuevoEnlace.target = "_blank";  // Abrir enlace en otra pestaña
+  
+          // Agregar el enlace al elemento li
+          nuevoAcuerdoLi.appendChild(nuevoEnlace);
+  
+          // Agregar el elemento li a la lista
+          ultimosAcuerdosUl.appendChild(nuevoAcuerdoLi);
+      }
+  </script>
   </body>
 
 </html>
