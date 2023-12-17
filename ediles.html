@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Concejo | Dashboard Comuna 17</title>
+    <title>Ediles Comuna 17 | Dashboard Comuna 17</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
@@ -52,7 +52,7 @@
                 <div class="collapsed" id="elecciones-collapse">
                   <ul class="btn-toggle-nav list-unstyled">
                     <li><a href="concejo.html" class="link rounded">- Concejo</a></li>
-                    <li><a href="ediles.html" class="link rounded">- Ediles</a></li>
+                    <li><a href="ediles.html" class="link rounded">- Ediles Comuna 17</a></li>
                     <li><a href="alcaldia.html" class="link rounded">- Alcaldía</a></li>
                   </ul>
                 </div>
@@ -84,87 +84,36 @@
                         <div class="widget mapa">
                             <h3 class="titulo">Votos por partidos y candidatos</h3>
                             <ul class="list-group">
+                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#centro-democratico">
+                                <li class="list-group-item">Centro Democrático <span class="badge">11.325 <i>(19,6%)</i></span><span class="badge">4 curules</span>
+                                </li>  </button>
+                                <div class="collapse" id="centro-democratico">
+                                  <ul class="btn-toggle-nav list-unstyled">
+                                  <li class="list-group-item">Neyla Mary Salgado Mazuera <span class="badge">2.903 <i>(5%)</i></span>
+                                  <li class="list-group-item">Miguel Santiago González Torres <span class="badge">1.358 <i>(2,3%)</i></span> 
+                                  <li class="list-group-item">Samuel Rincón Betancourt <span class="badge">894 <i>(1,5%)</i></span> 
+                                  <li class="list-group-item">Angie del Carmen Estupiñán Diaz <span class="badge">855 <i>(1,5%)</i></span> 
+                                  </div>  
+                                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#partido-verde">
+                                    <li class="list-group-item">Partido Verde <span class="badge">7.211 <i>(12,4%)</i></span><span class="badge">3 curules</span>
+                                    </li></button>
+                                    <div class="collapse" id="partido-verde">
+                                      <ul class="btn-toggle-nav list-unstyled">
+                                      <li class="list-group-item">Anthony Parra Escarria <span class="badge">1.515 <i>(2,6%)</i></span>
+                                      <li class="list-group-item">Juliana Alejandra Mendoza García <span class="badge">780 <i>(1,3%)</i></span> 
+                                      <li class="list-group-item">Maria Claudia Hernández Torres <span class="badge">680 <i>(1,1%)</i></span>
+                                      </div>                            
                               <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#partido-u">
-                                <li class="list-group-item">Partido de la U <span class="badge">105.801 <i>(14%)</i></span><span class="badge">4 curules</span>
+                                <li class="list-group-item">Partido de la U <span class="badge">4.427 <i>(7,3%)</i></span><span class="badge">1 curul</span>
                                 </li></button> 
                                   <div class="collapse" id="partido-u">
                                     <ul class="btn-toggle-nav list-unstyled">
-                                    <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/audry-maria-toro-echavarria/" target="_blank">Audry Maria Toro Echavarría</a> <span class="badge">19.363 <i>(2,6%)</i></span>
-                                    <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/tania-fernandez-sanchez/" target="_blank">Tania Fernandez Sánchez </a><span class="badge">18.226 <i>(2,4%)</i></span>
-                                    <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/henry-pelaez-cifuentes/" target="_blank">Henry Peláez Cifuentes</a> <span class="badge">16.853 <i>(2,2%)</i></span>
-                                    <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/carlos-andres-arias-rueda/" target="_blank">Carlos Andrés Arias Rueda</a> <span class="badge">14.483 <i>(1,9%)</i></span>
+                                    <li class="list-group-item">Juan Manuel Serrano Tello <span class="badge">1.106 <i>(1,9%)</i></span>
                                     </div>
-                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#partido-liberal">
-                                 <li class="list-group-item">Partido Liberal <span class="badge">85.764 <i>(11,4%)</i></span><span class="badge">3 curules</span>
-                                </li></button>
-                                <div class="collapse" id="partido-liberal">
-                                  <ul class="btn-toggle-nav list-unstyled">
-                                  <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/carlos-pinilla-malo/" target="_blank">Carlos Hernando Pinilla Malo</a> <span class="badge">18.721 <i>(2,5%)</i></span>
-                                  <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/fabio-alonso-arroyave-botero/" target="_blank">Fabio Alonso Arroyave Botero</a> <span class="badge">16.392 <i>(2,2%)</i></span>
-                                  <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/james-junior-agudelo-arevalo/" target="_blank">James Junior Agudelo Arevalo</a> <span class="badge">13.566 <i>(1,8%)</i></span>
-                                  </div>
-                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#pacto">
-                              <li class="list-group-item">Pacto Histórico <span class="badge">83.041 <i>(11%)</i></span><span class="badge">3 curules</span>
-                              </li></button>
-                              <div class="collapse" id="pacto">
-                                <ul class="btn-toggle-nav list-unstyled">
-                                <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/ana-leidy-erazo-ruiz/" target="_blank">Ana Leidy Erazo Ruiz</a> </span>
-                                <li class="list-group-item">Luis Fernando Salazar Guapacha </span>
-                                <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/maria-del-carmen-londono-sanna/" target="_blank">Maria del Carmen Londoño Sanna</a> </span>
-                                </div>
-                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#partido-verde">
-                                <li class="list-group-item">Partido Verde <span class="badge">82.584 <i>(11%)</i></span><span class="badge">3 curules</span>
-                                </li></button>
-                                <div class="collapse" id="partido-verde">
-                                  <ul class="btn-toggle-nav list-unstyled">
-                                  <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/flower-enrique-rojas-torres/" target="_blank">Flower Enrique Rojas Torres</a> <span class="badge">16.772 <i>(2,2%)</i></span>
-                                  <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/rodrigo-salazar-sarmiento/" target="_blank">Rodrigo Salazar Sarmiento</a> <span class="badge">16.344 <i>(2,2%)</i></span> 
-                                  <li class="list-group-item"><a href="" target="_blank" rel="noopener noreferrer"></a>Carlos Ariel Patiño Moya <span class="badge">10.807 <i>(1,4%)</i></span>
-                                  </div>
-                                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#centro-democratico">
-                                  <li class="list-group-item">Centro Democrático <span class="badge">64.440 <i>(8,6%)</i></span><span class="badge">2 curules</span>
-                                  </li>  </button>
-                                  <div class="collapse" id="centro-democratico">
-                                    <ul class="btn-toggle-nav list-unstyled">
-                                    <li class="list-group-item">Rafael Andrés Escobar González <span class="badge">16.772 <i>(2,2%)</i></span>
-                                    <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/juan-felipe-murgueitio-bustamante/" target="_blank">Juan Felipe Murgueitio Bustamante</a> <span class="badge">16.344 <i>(2,2%)</i></span> 
-                                    </div>
-                                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#cambio-radical">
-                                  <li class="list-group-item">Cambio Radical <span class="badge">40.787 <i>(5,4%)</i></span><span class="badge">2 curules</span>
-                                  </li></button>
-                                  <div class="collapse" id="cambio-radical">
-                                    <ul class="btn-toggle-nav list-unstyled">
-                                    <li class="list-group-item">Edison Lucumi Lucumi <span class="badge">17.043 <i>(2,3%)</i></span>
-                                    <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/alexandra-hernandez-cedeno/" target="_blank">Alexandra Hernandez Cedeño</a> <span class="badge">9.272 <i>(1,2%)</i></span> 
-                                    </div>
-                                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#partido-conservador">
-                              <li class="list-group-item">Partido Conservador <span class="badge">40.787 <i>(6,4%)</i></span><span class="badge">1 curul</span>
-                              </li></button>
-                              <div class="collapse" id="partido-conservador">
-                                <ul class="btn-toggle-nav list-unstyled">
-                                <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/marlon-andres-cubillos-borrero/" target="_blank">Marlon Andrés Cubillos Borrero</a> <span class="badge">17.043 <i>(2,3%)</i></span>
-                                </div>
-                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#cali-une">
-                              <li class="list-group-item">Cali Nos Une <span class="badge">31.467 <i>(4,2%)</i></span><span class="badge">1 curul</span>
-                              </li></button>
-                              <div class="collapse" id="cali-une">
-                                <ul class="btn-toggle-nav list-unstyled">
-                                <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/edison-alberto-giraldo-hoyos/" target="_blank">Edison Alberto Giraldo Hoyos</a> <span class="badge">12.578 <i>(1,7%)</i></span>
-                                </div>
-                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#colombia-renaciente">
-                              <li class="list-group-item">Colombia Renaciente <span class="badge"><i>30.603 (4,1%)</i></span><span class="badge">1 curul</span>
-                              </li></button>
-                              <div class="collapse" id="colombia-renaciente">
-                                <ul class="btn-toggle-nav list-unstyled">
-                                <li class="list-group-item">Daniela Plaza Saldarriaga <span class="badge">7.359 <i>(1%)</i></span>
-                                </div>
-                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#firmes-cali">
-                              <li class="list-group-item">Firmes con Cali <span class="badge">Oposición</span><span class="badge">1 curul</span>
-                              </li></button>
-                              <div class="collapse" id="firmes-cali">
-                                <ul class="btn-toggle-nav list-unstyled">
-                                <li class="list-group-item"><a href="https://www.lasillavacia.com/quien-es-quien/roberto-ortiz-uruena/" target="_blank">Roberto Ortiz</a> </span>
-                                </div>
+                              
+                                
+
+                                  
                             </ul>
                         </div>
 
@@ -175,24 +124,18 @@
                             <h3 class="titulo">Datos Generales</h3>
                             <div class="contenedor d-flex flex-wrap">
                                 <div class="caja">
-                                    <h3>815.856</h3>
+                                    <h3>62.270</h3>
                                     <p>Votantes</p>
-                                    <i>44,9%</i>
+                                    <i>53,4%</i>
                                 </div>
                                 <div class="caja">
-                                    <h3>118.093</h3>
+                                    <h3>23.359</h3>
                                     <p>En blanco</p>
-                                    <i>14,5%</i>
+                                    <i>42,1%</i>
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="widget comentarios list-group">
-                          <h3 class="titulo">Últimos Acuerdos</h3>
-                          <ul class="list-group" id="ultimosAcuerdos">                              
-
-                          </ul>
-                      </div>  
+                        </div> 
                         <div class="widget comentarios list-group">
                             <h3 class="titulo">Preguntas Frecuentes</h3>
                             <ul class="list-group">

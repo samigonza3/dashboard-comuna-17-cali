@@ -38,7 +38,7 @@ const zona1 = [
 
 // Configuración del polígono para la zona 1
 const zona1Polygon = new google.maps.Polygon({
-  title: "Zona 1",
+  title: "Comuna 17",
   paths: zona1,
   strokeColor: "#0000FF",
   strokeOpacity: 0.8,
@@ -47,13 +47,12 @@ const zona1Polygon = new google.maps.Polygon({
   fillOpacity: 0.35
 });
 zona1Polygon.setMap(map);
-  
 
 
-
-  // Crear un arreglo de polígonos
+// Crear un arreglo de polígonos
   const polygons = [zona1Polygon];
 
+  
 // Establecer la opacidad inicial de los polígonos
 polygons.forEach((polygon) => {
   polygon.setOptions({ fillOpacity: 0.2 });
@@ -124,32 +123,75 @@ polygons.forEach((polygon) => {
   });
 
 
-// Define la función para crear el marcador de cruz
-function markerChurch(labelText) {
+  
+// Define la función para crear marcadores comunes
+function markerCommon(labelText) {
   return {
-    path: 'M 12 5 L 12 5 L 17 5 L 17 12 L 22 12 L 22 17 L 17 17 L 17 24 L 12 24 L 12 17 L 7 17 L 7 12 L 12 12 L 12 5 Z',
-    fillColor: 'yellow',
-    fillOpacity: 4,
-    anchor: new google.maps.Point(10, 0),
+    path: google.maps.SymbolPath.CIRCLE,
+    label: labelText,
+    fillColor: 'yellow',    
+    animation: google.maps.Animation.BOUNCE,
+    fillOpacity: 5,
+    anchor: new google.maps.Point(0, 0),
     strokeWeight: 2,
-    scale: 1.5,
-    labelOrigin: new google.maps.Point(12, 10),
-    label: {
-      text: labelText,
-      color: 'white',
-      fontSize: '16px',
-    },
+    scale: 7,
+    color: 'white',
+    fontSize: '16px',
   };
 }
 
+// Define la función para crear marcadores comunes
+function markerPark(labelText) {
+  return {
+    path: 'M 8.4 0.2 A 0.5 0.5 90 0 0 7.6 0.2 L 4.6 4.7 A 0.5 0.5 90 0 0 5 5.5 H 5.1 L 3.1 8.7 A 0.5 0.5 90 0 0 3.5 9.5 H 3.7 L 2.1 12.8 A 0.5 0.5 90 0 0 2.5 13.5 H 7 V 16 H 9 V 13.5 H 13.5 A 0.5 0.5 90 0 0 13.9 12.8 L 12.3 9.5 H 12.5 A 0.5 0.5 90 0 0 12.9 8.7 L 10.9 5.5 H 11 A 0.5 0.5 90 0 0 11.4 4.7 L 8.4 0.2 Z Z',
+    label: labelText,
+    fillColor: 'green',
+    fillOpacity: 3,
+    anchor: new google.maps.Point(10, 0),
+    strokeWeight: 1,
+    scale: 2,
+    color: 'white',
+    fontSize: '16px',
+  };
+}
+
+
 // Coordenadas de los marcadores
 const markerCoordinates = [
-  { lat: 3.3953091387162466, lng: -76.53082652224637, label: 'Parque' },
-  { lat: 3.3952639558878492, lng: -76.52963092757798, label: 'Parque' },
-  { lat: 3.395728787005886, lng: -76.52981962392562, label: 'Iglesia' },
-  { lat: 3.3953710, lng: -76.52699163390733, label: 'Parque' },
-  { lat: 3.3948998156824968, lng: -76.52569032228432, label: 'Parque' },
-  { lat: 3.395763, lng:  -76.539995 , label: 'Hueco' },
+   { lat: 3.3999617483659454,lng:  -76.53906928441614 , label: 'Parque' },
+   { lat: 3.3890270198965964,lng:  -76.54149894288598 , label: 'Parque' },
+   { lat: 3.3760819412236267,lng:  -76.53861708287884 , label: 'Parque' },
+   { lat: 3.3833122858529863,lng: -76.53112853958129 , label: 'Parque' },
+   { lat: 3.396843079802499,lng: -76.5224847976983 , label: 'Parque' },
+   { lat: 3.3953909520946497,lng: -76.52250248600515 , label: 'Parque' },
+   { lat: 3.3953909520946497,lng: -76.52250248600515 , label: 'Parque' },
+   { lat: 3.3951413401736845, lng: -76.52049220746586 , label: 'Parque' },
+   { lat: 3.3965042601594857,  lng: -76.52003815942278 , label: 'Parque' },
+   { lat: 3.3937769844161636,  lng: -76.51789218413116 , label: 'Parque' },
+   { lat: 3.3864843326894376,  lng: -76.53174821964623 , label: 'Parque' },
+   { lat: 3.386686522848349,  lng: -76.52254477159123 , label: 'Parque' },
+   { lat: 3.3836080203518963,   lng: -76.53735732036806 , label: 'Parque' },
+   { lat: 3.393039945607696,    lng: -76.51656908724138 , label: 'Parque' },
+   { lat: 3.391429934198953,    lng: -76.51857999750557  , label: 'Parque' },
+   { lat: 3.3914952547632704,    lng: -76.51721311381586  , label: 'Parque' },
+   { lat: 3.397684891992662,   lng: -76.5190131925839   , label: 'Parque' },
+   { lat: 3.374913413196946,   lng: -76.52817799433475  , label: 'Parque' },
+   { lat: 3.3851547372344877,   lng: -76.54093840144236  , label: 'Parque' },
+   { lat: 3.396015763436757,    lng: -76.54204041130477  , label: 'Parque' },
+   { lat: 3.396446242698571,    lng: -76.54017011986056  , label: 'Parque' },
+   { lat: 3.397765806036558,     lng: -76.53914170555261 , label: 'Parque' },
+   { lat: 3.3973987652206006,      lng: -76.54449657293115 , label: 'Parque' },
+   { lat: 3.408389181195292,  lng: -76.53793079626516 , label: 'Parque' },
+   { lat: 3.394870407375609,   lng: -76.52701961470508 , label: 'Parque' },
+   { lat: 3.3932794329718163,   lng: -76.52088443807092  , label: 'Parque' },
+   { lat: 3.39518607741492,    lng: -76.53071866630361  , label: 'Parque' },
+   { lat: 3.4008646133461533,    lng: -76.52980594125204   , label: 'Parque' },
+   { lat: 3.3989874143715126,    lng: -76.53421099422164   , label: 'Parque' },
+   { lat: 3.4027785206246115,    lng: -76.52349077808022    , label: 'Parque' },
+   { lat: 3.407205868269389,   lng: -76.53090905763183    , label: 'Parque' },
+   { lat: 3.3965052516766194,  lng: -76.53659483659577   , label: 'Parque' },
+
+
 ];
 
 // Agregar marcadores utilizando un bucle
@@ -157,7 +199,7 @@ markerCoordinates.forEach((coordinate) => {
   const marker = new google.maps.Marker({
     position: coordinate,
     map: map,
-    icon: coordinate.label === 'Iglesia' ? markerChurch(coordinate.label) : 
+    icon: coordinate.label === 'Parque' ? markerPark(coordinate.label) : 
           (coordinate.label === 'Parque Javier Adad' ? markerConstruction(coordinate.label) :
           (coordinate.label === 'Hueco' ? markerHueco(coordinate.label) : markerCommon(coordinate.label))),
     });
