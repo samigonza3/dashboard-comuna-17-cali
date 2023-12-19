@@ -1,0 +1,262 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ediles Comuna 17 | Dashboard Comuna 17</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="module" src="./comuna.ts"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="barra-lateral col-12 col-sm-auto">
+            <div class="logo">
+                <h2>Dashboard Comuna 17</h2>
+            </div>
+            <ul class="menu list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn align-items-center rounded" data-bs-toggle="" data-bs-target="#home-collapse">
+                  <a style="margin-left: 0px !important;" href="index.html"><i class="icon-home"></i><span>Home</span></a>
+                </button>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#barrios-collapse">
+                    <i class="icon-building"></i><span>Barrios</span>
+                </button>
+                <div class="collapse" id="barrios-collapse">
+                  <ul class="btn-toggle-nav list-unstyled">
+                    <li><a href="dashboard-cataya.html" class="link rounded">- Gran Limonar - Cataya</a></li>
+                    <li><a href="dashboard-gran-limonar.html" class="link rounded">- Gran Limonar</a></li>
+                    <li><a href="dashboard-la-hacienda.html" class="link rounded">- La Hacienda</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded">
+                  <a style="margin-left: 0px !important;" href="cineclubes.html"><i class="icon-play"></i><span>Cineclubes</span></a>
+                </button>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#elecciones-collapse">
+                    <i class="icon-angellist"></i><span>Elecciones Regionales 2023</span>
+                </button>
+                <div class="collapsed" id="elecciones-collapse">
+                  <ul class="btn-toggle-nav list-unstyled">
+                    <li><a href="concejo.html" class="link rounded">- Concejo</a></li>
+                    <li><a href="ediles.html" class="link rounded">- Ediles Comuna 17</a></li>
+                    <li><a href="alcaldia.html" class="link rounded">- Alcaldía</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="border-top my-3"></li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse">
+                    <i class="icon-sun"></i><span>Configuración</span>
+                </button>
+                <div class="collapse" id="account-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded">Sugerencias</a></li>
+                    <li><a href="#" class="link-dark rounded">Acerca de</a></li>
+                    <li><a href="#" class="link-dark rounded">Sube tu queja</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            
+        </div>
+
+            <main class="main col">
+                <div class="row">
+                    <div class="columna col-lg-12">
+                        <h1 class="titulo-h1">Elecciones para Alcalde</h1>
+                    </div>
+
+                    <div class="columna col-lg-7">
+                        <div class="widget mapa">
+                            <h3 class="titulo">Votos por candidatos</h3>
+                            <ul class="list-group">
+                              <li class="list-group-item">Alejandro Eder <span class="badge">315.599 Votos</span><span class="badge">40,4%</span></li> 
+                              <li class="list-group-item">Roberto Ortiz <span class="badge">220.404 Votos</span><span class="badge">28,2%</span></li> 
+                              <li class="list-group-item">Danis Rentería <span class="badge">86.682 Votos</span><span class="badge">11,1%</span></li> 
+                              <li class="list-group-item">Miyerlandi Torres <span class="badge">34.447 Votos</span><span class="badge">4,4%</span></li> 
+                              <li class="list-group-item">Edilson Huérfano <span class="badge">19.202 Votos</span><span class="badge">2,5%</span></li> 
+                              <li class="list-group-item">Deninson Mendoza <span class="badge">11.040 Votos</span><span class="badge">1,4%</span></li> 
+                              <li class="list-group-item">Diana Rojas <span class="badge">5.637 Votos</span><span class="badge">0,7%</span></li> 
+                              <li class="list-group-item">Heriberto Escobar <span class="badge">4.377 Votos</span><span class="badge">0,6%</span></li> 
+                              <li class="list-group-item">Wilfredo Pardo <span class="badge">3.324 Votos</span><span class="badge">0,4%</span></li> 
+                              <li class="list-group-item">Wilson Ruiz <span class="badge">2.152 Votos</span><span class="badge">0,3%</span></li> 
+                                
+                          </ul>
+                        </div>
+                        <div class="widget pdf">
+                          <h3 class="titulo">Plan de Gobierno del Alcalde Electo</h3>
+                          <iframe src="https://www.alejandroeder.com.co/_files/ugd/d3a86b_49dce7dd332049d5a5fd084ca30b8de9.pdf" width="100%" height="500px"></iframe>
+                          <!-- Reemplaza "ruta_del_archivo.pdf" con la ruta real de tu archivo PDF -->
+                      </div>
+                    </div>
+
+                    <div class="columna col-lg-5">
+                        <div class="widget estadisticas">
+                            <h3 class="titulo">Datos Generales</h3>
+                            <div class="contenedor d-flex flex-wrap">
+                                <div class="caja">
+                                    <h3>824.269</h3>
+                                    <p>Votantes</p>
+                                    <i>45,4%</i>
+                                </div>
+                                <div class="caja">
+                                    <h3>78.429</h3>
+                                    <p>En blanco</p>
+                                    <i>10%</i>
+
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="widget comentarios list-group">
+                            <h3 class="titulo">Preguntas Frecuentes</h3>
+                            <ul class="list-group">
+                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#faq-1">
+                                <li class="list-group-item">¿Cuáles son los deberes del Alcalde?</i></span>
+                                </li>
+                              </button> 
+                                  <div class="collapse" id="faq-1">
+                                    <ul class="btn-toggle-nav list-unstyled">
+                                    <li class="list-group-item">
+                                        Los concejales representan a los ciudadanos
+                                        y tienen dos funciones principales:</br>
+                                        1. Debatir Proyectos de Acuerdo.</br>
+                                        2. Ejercer control político a las actuaciones 
+                                        de la Alcaldía.Su número depende del número de habitantes.</br></br> 
+                                        En Cali se eligen 21 concejales porque de acuerdo al 
+                                        Censo de Población, la Ciudad tiene más de 1.000.000 de 
+                                        habitantes. </br></br>
+                                        Los concejales son elegidos cada tres años, 
+                                        conjuntamente con el Alcalde. Los asuntos referidos a su gestión se establecen en Acuerdos, los cuales deben
+                                        ajustarse a las funciones que constitucional y legalmente 
+                                        le corresponden. </br></br>
+                                        El Concejo Municipal de 
+                                        Cali, por mandato 
+                                        constitucional, cumple 
+                                        diferentes funciones, entre ellas 
+                                        estudiar, aprobar y rechazar Proyectos de 
+                                        Acuerdo, así como presentar iniciativas 
+                                        normativas siempre y cuando, según lo 
+                                        establecido en la ley 136 de 1994, no tengan 
+                                        impacto fiscal en las finanzas municipales
+                                    </li>
+                                  </div>
+                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#faq-2">
+                                <li class="list-group-item">¿Cómo funciona el Concejo?</i></span>
+                                </li>
+                              </button> 
+                                  <div class="collapse" id="faq-2">
+                                    <ul class="btn-toggle-nav list-unstyled">
+                                    <li class="list-group-item">
+                                      El Concejo de Cali se reúne ordinariamente cuatro veces al año, específicamente el primero de agosto, noviembre, febrero y mayo. Estas sesiones tienen una duración inicial de treinta días, con la posibilidad de ser prorrogadas por diez días más a discreción del Concejo.
+                                    </br></br>
+                                      Además de las reuniones ordinarias, el Concejo puede convocarse extraordinariamente por decisión del Alcalde. En estas ocasiones, se abordan exclusivamente los asuntos que la autoridad que los convocó somete a su consideración.
+                                      </br></br>
+                                      En Cali, el Concejo se divide en tres comisiones: Comisión de Plan y Tierras, Comisión 
+                                      de Institutos y Comisión de Presupuesto. </br></br>
+                                      De las sesiones se levantan actas que contienen la 
+                                      relación de los temas tratados, las personas que 
+                                      intervienen, los mensajes, proposiciones y decisiones 
+                                      adoptadas.  
+                                    </li>
+                                  </div>
+                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#faq-3">
+                                <li class="list-group-item">¿Por qué es importante hacer seguimiento al Concejo?</i></span>
+                                </li>
+                              </button> 
+                                  <div class="collapse" id="faq-3">
+                                    <ul class="btn-toggle-nav list-unstyled">
+                                    <li class="list-group-item">
+                                      Hacer seguimiento al Concejo de Cali hace 
+                                      parte del ejercicio de control social que la 
+                                      Constitución Nacional de Colombia facultó 
+                                      a la sociedad civil. Aunque, se puede entender como un ejercicio democrático de cara 
+                                      al presente, también exige pensar prospectivamente la ciudad y la región que queremos construir en el mediano y largo plazo.    </li>
+                                  </div>
+                            </ul>
+                        </div>
+
+                        <div class="widget nueva_entrada">
+                            <h3 class="titulo">Deja tu denuncia</h3>
+                            <form action="">
+                                <input type="text" placeholder="Nombre completo">
+                                <input type="text" placeholder="Correo electrónico">
+                                <input type="text" placeholder="Título de la denuncia">
+                                <textarea placeholder="Lorem ipsum"></textarea>
+                                <div class="d-flex justify-content-end">
+                                    <button><i class="icon icon-ok"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+        
+        </div>
+
+
+    </div>
+
+
+        <!-- Footer con iconos de redes sociales -->
+        <footer class="bg-dark text-white text-center py-3">
+          <div class="container">
+            <div class="mb-3">
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2023 Barrio Gran Limonar II y III</p>
+          </div>
+        </footer>
+
+    <!-- prettier-ignore -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmZpA70ZSOisUj6I9cxh0Yd2n38ZBIew4&callback=initMap&v=weekly&language=es"
+      defer
+    ></script>
+    <script src="sidebars.js"></script>
+    <script src="enlaces.js"></script>
+    <script>
+      // Obtener la referencia al elemento ul
+      const ultimosAcuerdosUl = document.getElementById('ultimosAcuerdos');
+  
+      // Iterar sobre los primeros 5 enlaces y agregarlos a la lista
+      for (let i = 0; i < 5 && i < enlaces.length; i++) {
+          // Crear un elemento li
+          const nuevoAcuerdoLi = document.createElement('li');
+          nuevoAcuerdoLi.classList.add('list-group-item');
+  
+          // Crear un enlace a partir del URL
+          const nuevoEnlace = document.createElement('a');
+          nuevoEnlace.href = enlaces[i].url;  // Utilizar la URL del objeto enlaces
+          nuevoEnlace.textContent = enlaces[i].titulo;  // Utilizar el título del objeto enlaces
+          nuevoEnlace.target = "_blank";  // Abrir enlace en otra pestaña
+  
+          // Agregar el enlace al elemento li
+          nuevoAcuerdoLi.appendChild(nuevoEnlace);
+  
+          // Agregar el elemento li a la lista
+          ultimosAcuerdosUl.appendChild(nuevoAcuerdoLi);
+      }
+  </script>
+  </body>
+
+</html>
