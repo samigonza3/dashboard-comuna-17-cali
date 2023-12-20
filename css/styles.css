@@ -17,6 +17,11 @@ body {
     margin-left: 25px;
 }
 
+.barra-lateral button {
+    color: #fff;
+    margin-left: 25px;
+}
+
 .barra-lateral .logo {
     background: #0275db;
     margin-bottom: 2px;

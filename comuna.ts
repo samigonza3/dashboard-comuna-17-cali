@@ -2,6 +2,7 @@ let map;
 let infoWindows = []; // Almacenar todas las ventanas de información en un arreglo
 let selectedPolygon = null;
 let currentInfoWindow = null; // Almacena la InfoWindow actualmente abierta
+let parquesMarkers = []; // Almacena los marcadores de parques
 
 function initMap() {
   const mapElement = document.getElementById("map");
@@ -16,6 +17,10 @@ function initMap() {
       zoomControl: true,
     });
   }
+
+// Agregar evento al botón para activar/desactivar convenciones
+const toggleConvencionesButton = document.getElementById("toggleConvenciones");
+toggleConvencionesButton.addEventListener("click", toggleConvenciones);
 
   
 // Definición de coordenadas para la zona 1
@@ -60,16 +65,14 @@ polygons.forEach((polygon) => {
 
   // Configurar un InfoWindow global
   const globalInfoWindow = new google.maps.InfoWindow();
-  // Agregar un evento al mapa para cerrar todas las ventanas de información
+
+// Agregar un evento al mapa para cerrar todas las ventanas de información
   google.maps.event.addListener(map, "click", function () {
     infoWindows.forEach((infoWindow) => {
       infoWindow.close();
     });
 
-    google.maps.event.addListener(map, "click", function () {
-      globalInfoWindow.close();
-    });
-
+    globalInfoWindow.close();
   });
 
   // Define el estilo por defecto y otros estilos
@@ -100,10 +103,9 @@ polygons.forEach((polygon) => {
     });
 
     polygon.addListener("click", function (event) {
-      // Cambiar estilo al dar clic y guardar el polígono seleccionado
       polygon.setOptions({ strokeOpacity: 5, fillOpacity: 0.7 });
       if (selectedPolygon && selectedPolygon !== polygon) {
-        selectedPolygon.setOptions(styleDefault); // Restaurar el estilo del polígono previamente seleccionado
+        selectedPolygon.setOptions(styleDefault);
       }
       selectedPolygon = polygon;
 
@@ -123,22 +125,7 @@ polygons.forEach((polygon) => {
   });
 
 
-  
-// Define la función para crear marcadores comunes
-function markerCommon(labelText) {
-  return {
-    path: google.maps.SymbolPath.CIRCLE,
-    label: labelText,
-    fillColor: 'yellow',    
-    animation: google.maps.Animation.BOUNCE,
-    fillOpacity: 5,
-    anchor: new google.maps.Point(0, 0),
-    strokeWeight: 2,
-    scale: 7,
-    color: 'white',
-    fontSize: '16px',
-  };
-}
+
 
 // Define la función para crear marcadores comunes
 function markerPark(labelText) {
@@ -194,33 +181,26 @@ const markerCoordinates = [
 
 ];
 
-// Agregar marcadores utilizando un bucle
 markerCoordinates.forEach((coordinate) => {
   const marker = new google.maps.Marker({
     position: coordinate,
     map: map,
-    icon: coordinate.label === 'Parque' ? markerPark(coordinate.label) : 
-          (coordinate.label === 'Parque Javier Adad' ? markerConstruction(coordinate.label) :
-          (coordinate.label === 'Hueco' ? markerHueco(coordinate.label) : markerCommon(coordinate.label))),
-    });
-
-// Agregar un evento click para mostrar la etiqueta al hacer clic en el marcador
-marker.addListener('click', function() {
-  // Cerrar la InfoWindow actual si está abierta
-  if (currentInfoWindow) {
-    currentInfoWindow.close();
-    currentInfoWindow = null; // Restablecer la referencia a la InfoWindow
-  }
-
-  // Crear una nueva InfoWindow y abrirla
-  const infoWindow = new google.maps.InfoWindow({
-    content: coordinate.label,
+    icon: coordinate.label === 'Parque' ? markerPark(coordinate.label) : markerCommon(coordinate.label),
   });
-  infoWindow.open(map, marker);
 
-  // Actualizar la referencia a la InfoWindow actual
-  currentInfoWindow = infoWindow;
-});
+  marker.addListener('click', function () {
+    if (currentInfoWindow) {
+      currentInfoWindow.close();
+      currentInfoWindow = null;
+    }
+
+    const infoWindow = new google.maps.InfoWindow({
+      content: coordinate.label,
+    });
+    infoWindow.open(map, marker);
+
+    currentInfoWindow = infoWindow;
+  });
 });
 }
 
