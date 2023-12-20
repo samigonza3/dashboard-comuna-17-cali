@@ -1,4 +1,6 @@
 # Dashboard Comunal de Cali - Comuna 17
+## Cómo visualizar
+https://samigonza3.github.io/dashboard-comuna-17-cali/
 ## Qué incluye
 - Mapa de cada barrio de la comuna (Piloto: Gran Limonar, Gran Limonar Cataya, La Hacienda)
 - Cineclubes de Cali
