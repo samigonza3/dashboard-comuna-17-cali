@@ -19,7 +19,7 @@ body {
 
 .barra-lateral button {
     color: #fff;
-    margin-left: 25px;
+    margin-left: 0px;
 }
 
 .barra-lateral .logo {
@@ -91,6 +91,10 @@ body {
 .main .widget{
     margin-bottom: 40px;
 
+}
+
+.main .list-group-item span {
+    color:black
 }
 
 .main .widget form input[type="text"],
