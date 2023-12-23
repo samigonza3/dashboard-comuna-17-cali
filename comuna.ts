@@ -190,6 +190,7 @@ const markerCoordinates = [
    { lat: 3.4027785206246115,    lng: -76.52349077808022    , label: 'Parque' },
    { lat: 3.407205868269389,   lng: -76.53090905763183    , label: 'Parque' },
    { lat: 3.3965052516766194,  lng: -76.53659483659577   , label: 'Parque' },
+   { lat: 3.3972474, lng: -76.5747762   , label: 'Universidad' },
 
 
 ];
